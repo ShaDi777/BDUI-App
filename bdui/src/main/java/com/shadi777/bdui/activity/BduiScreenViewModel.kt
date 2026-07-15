@@ -42,15 +42,15 @@ class BduiScreenViewModel(
 
     private fun getBduiModelByKey(key: String): BduiModel {
         val jsonString = when (key.lowercase()) {
-            "main-menu" -> com.shadi777.bdui.Constants.mainMenu
-            "button-showcase" -> com.shadi777.bdui.Constants.buttonShowcase
-            "input-showcase" -> com.shadi777.bdui.Constants.inputShowcase
-            "label-showcase" -> com.shadi777.bdui.Constants.labelShowcase
-            "icon-showcase" -> com.shadi777.bdui.Constants.iconShowcase
-            "slider-showcase" -> com.shadi777.bdui.Constants.sliderShowcase
-            "infinite-loaders" -> com.shadi777.bdui.Constants.infiniteLoaders
-            "test-sample" -> com.shadi777.bdui.Constants.testSample
-            else -> com.shadi777.bdui.Constants.mainMenu
+            "main-menu" -> com.shadi777.bdui.mainMenu
+            "button-showcase" -> com.shadi777.bdui.buttonShowcase
+            "input-showcase" -> com.shadi777.bdui.inputShowcase
+            "label-showcase" -> com.shadi777.bdui.labelShowcase
+            "icon-showcase" -> com.shadi777.bdui.iconShowcase
+            "slider-showcase" -> com.shadi777.bdui.sliderShowcase
+            "infinite-loaders" -> com.shadi777.bdui.infiniteLoaders
+            "test-sample" -> com.shadi777.bdui.testSample
+            else -> com.shadi777.bdui.mainMenu
         }
         return Json.decodeFromString<BduiModel>(jsonString)
     }
